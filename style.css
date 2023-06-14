@@ -1,9 +1,88 @@
-*::after, *::before {
-    box-sizing: border-box;
+
+:root {
+    --Tomato: hsl(4, 100%, 67%);
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+}
+
+
+body {
+    background-color: white;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif; 
+}
+
+main {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 1rem;
+    height: 100%;
+    width: 100%;
+}
+
+.side    {
+    display: flex;
+    background: url("assets/images/illustration-sign-up-mobile.svg") no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    width: 100vw;
+}
+
+li {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0rem;
+    margin: 0;
+ }
+
+ .button {
+    background-color: var(--DarkSlateGrey);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem 0rem;
+ }
+
+ input {
+   
+    border-radius: 10px;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem 0rem;
+ }
+
+@media screen and (min-width: 376px) {
+
+main {
+    flex-direction: row;
 }
 
 body {
+    background-color: #34384D;
     display: flex;
-    margin: auto;
-    padding: 0;
+    flex-direction: row;
+}
+
+aside {
+    background-image: url("assets/images/illustration-sign-up-desktop.svg");
+}
+
 }

@@ -30,3 +30,6 @@ The designs were created to the following widths:
 
 - Family: [Roboto](https://fonts.google.com/specimen/Roboto)
 - Weights: 400, 700
+
+### Design resolution
+- 1440 x 1080
