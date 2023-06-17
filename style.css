@@ -14,10 +14,11 @@ body {
     height: 100vh;
     font-family: 'Roboto', sans-serif; 
     overflow-x: hidden;
+    user-select: none
 }
 
 main {
-    display: none;
+    display: grid;
     grid-template-rows: 1fr 1fr;
     justify-content: center;
     align-items: baseline;
@@ -93,14 +94,29 @@ ul {
     padding: 1rem 0rem;
  }
 
+ .dismissButton {
+    margin-bottom: 2rem;
+ }
+
+ .dismissButton:hover {
+    cursor: pointer;
+ }
  .successWindow {
-    padding: 1rem;
+    display: none;
+    padding: 5rem 1rem 1rem 1rem;
     margin: 0;
     
  }
 
+ .bullet2 {
+    height: 50px;
+    width: 50px;
+ }
 
-
+.success {
+    line-height: 1.6;
+    margin-bottom: 20vh
+ }
 @media screen and (min-width: 376px) {
 
 body {
