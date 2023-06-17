@@ -13,10 +13,11 @@ body {
     padding: 0;
     height: 100vh;
     font-family: 'Roboto', sans-serif; 
+    overflow-x: hidden;
 }
 
 main {
-    display: grid;
+    display: none;
     grid-template-rows: 1fr 1fr;
     justify-content: center;
     align-items: baseline;
@@ -84,13 +85,21 @@ ul {
     
  }
 
- .button {
+ .button, .dismissButton {
     background-color: var(--DarkSlateGrey);
     color: white;
     border-radius: 10px;
     text-align: center;
     padding: 1rem 0rem;
  }
+
+ .successWindow {
+    padding: 1rem;
+    margin: 0;
+    
+ }
+
+
 
 @media screen and (min-width: 376px) {
 
