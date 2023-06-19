@@ -178,4 +178,25 @@ h1 {
  .button:hover {
     cursor: pointer;
  }
+
+ .successWindow {
+    display: none;
+    background-color: white;
+    border-radius: 20px;
+    width: 30vw;
+    height: 50vh;
+    place-content: center;
+    padding: 2rem;
+    margin: auto;
+    
+ }
+
+ .dismissButton {
+    margin-bottom: 0rem;
+ }
+
+ .success {
+    line-height: 1.6;
+    margin-bottom: 0vh
+ }
 }
