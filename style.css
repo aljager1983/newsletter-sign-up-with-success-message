@@ -87,22 +87,29 @@ ul {
  }
 
  .button, .dismissButton {
+    
     background-color: var(--DarkSlateGrey);
     color: white;
     border-radius: 10px;
     text-align: center;
     padding: 1rem 0rem;
+    font-weight: 700;
+    justify-content: center;
+    align-items: end;
  }
 
  .dismissButton {
     margin-bottom: 2rem;
+   
  }
 
  .dismissButton:hover {
     cursor: pointer;
  }
+ 
  .successWindow {
     display: none;
+    flex-direction: column;
     padding: 5rem 1rem 1rem 1rem;
     margin: 0;
     
@@ -115,7 +122,19 @@ ul {
 
 .success {
     line-height: 1.6;
-    margin-bottom: 20vh
+    margin-bottom: 20vh;
+  
+ }
+#emailError {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ #errorMsg {
+    display: none;
+    color: red;
+    font-size: 0.75rem;
+    font-weight: 600;
  }
 @media screen and (min-width: 376px) {
 
@@ -128,8 +147,6 @@ body {
 
 main {
     display: flex;
-    /* grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr; */
     place-self: center;
     align-self: center;
     background-color: white;
@@ -141,15 +158,13 @@ main {
 }
 
 .info {
-    /* grid-column: 1/2;
-    grid-row: 1/2; */
+   
     padding: 1.5rem;
     margin-top: auto;
 }
 
 .side    {
-    /* grid-column: 2/3;
-    grid-row: 1/2; */
+   
     margin: 0;
     background: url("assets/images/illustration-sign-up-desktop.svg") no-repeat;
     background-position: center right;
@@ -160,10 +175,6 @@ main {
     border-bottom-right-radius: 0px;
 }
 
-h1 {
-    font-size: 2.5rem;
-    margin-top: 0rem;
-}
 
 .email {
     padding-top: 0rem;
@@ -175,28 +186,33 @@ h1 {
     width: 15px;
  }
 
- .button:hover {
+ .button:hover, .dismissButton:hover {
     cursor: pointer;
+    background-image: linear-gradient(to bottom right, red, rgb(255, 162, 0));
  }
 
  .successWindow {
     display: none;
+    flex-direction: column;
     background-color: white;
     border-radius: 20px;
     width: 30vw;
     height: 50vh;
     place-content: center;
-    padding: 2rem;
+    padding: 3rem;
     margin: auto;
-    
+    justify-content: space-between;
  }
 
- .dismissButton {
-    margin-bottom: 0rem;
+ h1 {
+    
+    font-size: 3rem;
+    margin: 1rem 0;
  }
 
  .success {
     line-height: 1.6;
-    margin-bottom: 0vh
+    margin-bottom: 1rem;
+    font-size: 1rem;
  }
 }
