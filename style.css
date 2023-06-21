@@ -14,30 +14,31 @@ body {
     height: 100vh;
     font-family: 'Roboto', sans-serif; 
     overflow-x: hidden;
-    user-select: none
+    user-select: none;
 }
 
 main {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 270px 1fr;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
     background-color: white;
     padding-bottom: 2rem;
     width: 100vw;
+    
 }
 
 .info {
     grid-row: 2/3;
     padding: 0 1rem;
-    margin-top: -5rem;
+    margin-top: 0;
 }
 
 .side    {
     grid-row: 1/2;
     background: url("assets/images/illustration-sign-up-mobile.svg") no-repeat;
     background-position: center top;
-    background-size: cover;
+    /* background-size: contain; */
     height: 300px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -83,7 +84,6 @@ ul {
     padding: 1rem 0 1rem 1rem;
     border: solid grey 1px;
     width: 325px;
-    
  }
 
  .button, .dismissButton {
@@ -142,7 +142,7 @@ body {
     background-color: #34384D;
     display: flex;
     place-content: center;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 main {
@@ -150,29 +150,31 @@ main {
     place-self: center;
     align-self: center;
     background-color: white;
-    width: 50vw;
+    width: 60vw;
     height: 60vh;
     border-radius: 20px;
     padding-bottom: 0rem;
-    padding: 1rem;
+    
 }
 
 .info {
    
-    padding: 1.5rem;
-    margin-top: auto;
+    padding: 2rem;
+    margin: 1rem 0;
 }
 
 .side    {
    
     margin: 0;
     background: url("assets/images/illustration-sign-up-desktop.svg") no-repeat;
-    background-position: center right;
+    background-position: center;
     background-size: contain;
-    height: 60vh;
-    width: 30vw;
+    height: 100%;
+    width: 100%;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    padding: 1rem 1.5rem 1rem 0rem;
+    background-origin: content-box;
 }
 
 
@@ -214,5 +216,13 @@ main {
     line-height: 1.6;
     margin-bottom: 1rem;
     font-size: 1rem;
+ }
+
+ input {
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 1rem 0 1rem 1rem;
+    border: solid grey 1px;
+    width: 375px;
  }
 }
