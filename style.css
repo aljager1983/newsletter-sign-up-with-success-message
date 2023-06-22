@@ -150,8 +150,8 @@ main {
     place-self: center;
     align-self: center;
     background-color: white;
-    width: 60vw;
-    height: 60vh;
+    width: 65vw;
+    height: 63vh;
     border-radius: 20px;
     padding-bottom: 0rem;
     
@@ -159,21 +159,21 @@ main {
 
 .info {
    
-    padding: 2rem;
+    padding: 2rem 1rem 2rem 2rem;
     margin: 1rem 0;
 }
 
 .side    {
    
-    margin: 0;
+    margin: 0rem;
     background: url("assets/images/illustration-sign-up-desktop.svg") no-repeat;
-    background-position: center;
+    background-position: center right;
     background-size: contain;
     height: 100%;
     width: 100%;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    padding: 1rem 1.5rem 1rem 0rem;
+    padding: 2rem;
     background-origin: content-box;
 }
 
@@ -210,6 +210,7 @@ main {
     
     font-size: 3rem;
     margin: 1rem 0;
+    padding-bottom: 2rem;
  }
 
  .success {
